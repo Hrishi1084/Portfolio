@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  color: white;
+  background-color: black;
+  position: fixed;
+}
+
+.navigation-list {
+  width: 40%;
+  margin: 15px;
+}
+
+.navigation-list ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  width: 5%;
+}
+
+.button {
+  background-color: #d2d2d2;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  width: 22.5px;
+  height: 22.5px;
+  background-color: white;
+  border-radius: 50px;
+  margin: 1.25px;
+}
+
+input:checked + .button {
+  background-color: #20096d;
+}
+
+input:checked + .button::before {
+  transform: translateX(25px);
+}
+
+#check {
+  display: none;
+}
+
+.home {
+  height: 100vh;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home h1 {
+  font-size: 100px;
+}
+
+.home h3 {
+  font-size: 40px;
+}
+
+.home ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home a {
+  text-decoration: none;
+  color: black;
+}
+
+.about {
+  display: flex;
+  padding: 50px;
+}
+
+.about-info h1 {
+  font-size: 100px;
+}
+
+.about-info p {
+  font-size: 20px;
+}
+
+#about-btn {
+  padding: 10px;
+  font-size: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 20px;
+  cursor: pointer;
+}
+
+#extra-info {
+  display: none;
+}
+
+.about img {
+  width: 15%;
+  height: 100%;
+}
+
+.skills h1 {
+  text-align: center;
+  font-size: 100px;
+}
+
+.skills-progress {
+  width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skills-progress li {
+  margin: 20px 0px;
+  list-style: none;
+  padding: 10px;
+}
+
+.bar {
+  background: #353648;
+  display: block;
+  height: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+
+  transition: 0.3s cubic-bezier (0.25, 0.8, 0.25, 1);
+}
+
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 0, 140, 1) 0%,
+    rgba(252, 103, 103, 1) 100%
+  );
+}
+
+.html {
+  width: 90%;
+  animation: html 3s;
+}
+
+.css {
+  width: 80%;
+  animation: css 3s;
+}
+
+.javascript {
+  width: 50%;
+  animation: javascript 3s;
+}
+
+.java {
+  width: 40%;
+  animation: java 3s;
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 45%;
+  }
+}
+
+.certifications{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.certifications h1{
+    width: 100%;
+    font-size: 100px;
+}
+
+.certificate{
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.certificate h3{
+    font-size: 25px;
+}
+
+.certificate p{
+    font-size: 15px;
+    margin: 5px;
+}
+
+.certificate button{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#certi1, #certi2, #certi3{
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: blueviolet;
+    color: white;
+}
+
+.projects h1{
+    width: 100%;
+    font-size: 100px;
+}
+
+.project{
+    width: 15%;
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.project h3{
+    font-size: 25px;
+}
+
+.project p{
+    font-size: 15px;
+    margin: 5px;
+}
+
+.project a{
+    text-decoration: underline;
+    color: white;
+}
+
+.contact{
+    background-color: burlywood;
+    padding: 50px;
+}
+
+.contact h1{
+    font-size: 100px;
+}
+
+.contact form{
+    padding: 20px;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.contact input{
+    width: 50%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+.call-email, .socials{
+    width: 50%;
+}
+
+.socials ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+

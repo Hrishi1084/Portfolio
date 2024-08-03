@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="navigation-list">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Service</li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div class="toggle">
+        <input type="checkbox" id="check" />
+        <label for="check" class="button"></label>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <h1>Vaishnavi Suryawanshi</h1>
+      <h3>Web Developer</h3>
+      <ul>
+        <li><a href="" target="_blank">X(Twitter)</a></li>
+        <li><a href="" target="_blank">Github</a></li>
+        <li><a href="" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+    <section class="about">
+      <div class="about-info">
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          natus dicta neque laudantium voluptas obcaecati ratione suscipit
+          consectetur dolor quas quae voluptates perferendis accusamus dolorem
+          eligendi, illum ullam praesentium optio aspernatur iusto, officiis
+          deserunt similique minima. Harum ipsa itaque perferendis mollitia
+          molestias fugit asperiores rerum reiciendis odit hic enim in quisquam
+          molestiae voluptatum, amet, quo ea maxime pariatur dolor at illo eum
+          adipisci exercitationem nostrum? Molestias laudantium a deleniti,
+          dolorem voluptatibus id nostrum nihil dignissimos labore porro
+          molestiae officiis architecto voluptas dicta culpa quos est minima
+          accusamus incidunt dolorum provident! Repellat, impedit id quasi natus
+          laudantium quis quia excepturi eligendi!
+        </p>
+        <p id="extra-info">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+          accusantium minus aliquam unde at dolorem neque reiciendis
+          consequatur, sed a exercitationem nesciunt vel illo tempora? Officiis
+          ad quas, sapiente et recusandae perferendis minus laboriosam, nulla
+          molestias tenetur itaque modi adipisci praesentium mollitia possimus
+          ea. Molestias vel veritatis fugiat quas? Sapiente!
+        </p>
+        <button onclick="showInfo()" id="about-btn">Read More</button>
+      </div>
+      <img src="./images/user2.jpg" alt="" />
+    </section>
+    <section class="skills">
+      <h1>My Skills</h1>
+      <div class="skills-progress">
+        <li>
+          <h3>HTML</h3>
+          <span class="bar"> <span class="html"></span> </span>
+        </li>
+        <li>
+          <h3>CSS</h3>
+          <span class="bar"> <span class="css"></span> </span>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <span class="bar"> <span class="javascript"> </span> </span>
+        </li>
+        <li>
+          <h3>Java</h3>
+          <span class="bar"> <span class="java"> </span> </span>
+        </li>
+      </div>
+    </section>
+    <section class="certifications">
+      <h1>My Certifications</h1>
+      <div class="certificate">
+        <h3>Certificate 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+        <button onclick="openCertificate('certi1')">View Certificate</button>
+        <img src="./images/user2.jpg" alt="" id="certi1">
+      </div>
+      <div class="certificate">
+        <h3>Certificate 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+        <button onclick="openCertificate('certi2')">View Certificate</button>
+        <img src="./images/user2.jpg" alt="" id="certi2">
+      </div>
+      <div class="certificate">
+        <h3>Certificate 1</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+        <button onclick="openCertificate('certi3')">View Certificate</button>
+        <img src="./images/user2.jpg" alt="" id="certi3">
+      </div>
+    </section>
+  </section>
+  <section class="projects">
+    <h1>My Projects</h1>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut ullam id numquam quidem magni corporis. At ex voluptatum quod.</p>
+      <a href="">Open Project</a>
+    </div>
+  </section>
+  <section class="contact">
+    <h1>Contact</h1>
+    <form action="#">
+      <label for="name">Name: </label>
+      <input type="text" id="name"><br>
+      <label for="email">Email: </label>
+      <input type="email" id="email"><br>
+      <label for="msg">Message: </label>
+      <textarea name="msg" id="msg"></textarea>
+    </form>
+  </section>
+  <footer>
+    <section class="call-email">
+      <a href="mailto:vaishnavisuryawanshi0201@gmail.com" target="_blank">vaishnavisuryawanshi0201@gmail.com</a><br>
+      <a href="tel:9172773406" target="_blank">9172773406</a>
+    </section>
+    <section class="socials">
+      <ul>
+        <li><a href="" target="_blank">X(Twitter)</a></li>
+        <li><a href="" target="_blank">Github</a></li>
+        <li><a href="" target="_blank">LinkedIn</a></li>
+      </ul>
+    </section>
+  </footer>
+    <script>
+      var display = 0;
+      function showInfo() {
+        if (display == 0) {
+          var para = document.getElementById("extra-info");
+          var btn = document.getElementById("about-btn");
+          para.style.display = "block";
+          btn.innerHTML = "Read Less";
+          display = 1;
+        } else {
+          var para = document.getElementById("extra-info");
+          var btn = document.getElementById("about-btn");
+          para.style.display = "none";
+          btn.innerHTML = "Read More";
+          display = 0;
+        }
+      }
+
+      var image=0
+      function openCertificate(certi){
+        var certificate= document.getElementById(certi);
+        if(image==0){
+          certificate.style.display="block";
+          image=1;
+        }else{
+          certificate.style.display="none";
+          image=0;
+        }
+      }
+    </script>
+  </body>
+</html>
